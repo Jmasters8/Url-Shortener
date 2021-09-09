@@ -3,11 +3,15 @@ const connectDB = require('./config/db');
 
 const app = express();
 
-
+// Connect to database
 connectDB();
 
 
 app.use(express.json({ extended: false}));
+
+// Define Routes
+app.use('/', require('./routes/index'));
+app.use('/api/url', require('./routes/index'));
 
 const PORT = 5000;
 
