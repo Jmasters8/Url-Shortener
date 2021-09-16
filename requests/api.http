@@ -2,5 +2,5 @@ POST http://localhost:5000/api/url/shorten
 Content-Type: application/json
 
 {
-  "longUrl": "https://bouncymustard.com/wp-content/uploads/2021/06/1-Funny-Dogs-Wearing-Wigs.jpg"
+  "longUrl": "https://www.youtube.com/watch?v=Q5QJ9i_o5vo"
 }
