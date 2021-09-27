@@ -20,7 +20,7 @@ const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 
 
+app.use(express.static('frontend/build'));
 app.get('/', (req, res) => {
-  app.use(express.static('frontend/build'));
   res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
 })
